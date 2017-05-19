@@ -1,6 +1,6 @@
 # Set up the client on the OctaPi network
 
-1. Connect a monitor, keyboard and mouse and power up a Raspberry Pi containing the **client** SD card you created earlier.
+1. Connect a monitor, keyboard, and mouse and power up a Raspberry Pi containing the **client** SD card you created earlier.
 
 1. Repeat the instructions from the previous step but this time on the **client**, logging onto the "OctaPi" network and removing any alternative Wi-Fi details from `wpa_suplicant`.
 
@@ -12,7 +12,7 @@
     nmap -sP 192.168.1.*
     ```
 
-    Make a note of the **server** IP address (you should see the router's address and the client's address listed too)
+    Make a note of the **server** IP address (you should see the router's address and the client's address listed, too).
 
     **IMPORTANT:** The `nmap` software scans the network to find the IP addresses of the devices connected to it. We need to do this on our local network (LAN) so that the client machine can communicate with the Raspberry Pi computers which form the OctaPi cluster. **Do not run nmap on a network that is connected to the internet.** nmap is a powerful piece of software and using it to scan a network you do not own may be considered 'hacking', and in some countries may even be illegal.
 
@@ -30,4 +30,4 @@
     ssh-copy-id -i ~/.ssh/id_rsa.pub <remote ip>
     ```
 
-    This completes preparation of the client and server, we now need to check everything is correct and working properly with a single server.
+    This completes preparation of the client and server. We now need to check everything is correct and working properly with a single server.
