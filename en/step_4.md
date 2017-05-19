@@ -2,11 +2,11 @@
 
 One of the Raspberry Pi computers will be used as the **client machine** giving access to the servers in the OctaPi cluster. You will need the usual peripherals (monitor, keyboard, mouse) connected to this Raspberry Pi in order to use it to control the OctaPi.
 
-1. On your micro SD card, install the latest version of Raspbian by following the [software guide instructions](https://www.raspberrypi.org/learning/software-guide/quickstart/)
+1. On your micro SD card, install the latest version of Raspbian by following the [software guide instructions](https://www.raspberrypi.org/learning/software-guide/quickstart/).
 
-1. Boot up the Raspberry Pi 3 using this micro SD card with a keyboard, screen, and mouse connected and ensure you are connected to the internet.
+1. Using this micro SD card, boot up the Raspberry Pi 3 with a keyboard, screen, and mouse connected and ensure it is also connected to the internet.
 
-1. Open a terminal window
+1. Open a terminal window.
 
     ![Open a terminal](images/terminal.png)
 
@@ -18,7 +18,7 @@ One of the Raspberry Pi computers will be used as the **client machine** giving 
 
     Dispy is a distributed Python implementation that will allow you to write code on the client and run it across the servers.
 
-    Further information on Dispy is available from [dispy: Distributed and Parallel Computing with/for Python](http://dispy.sourceforge.net/index.html)
+    Further information on Dispy is available from [dispy: Distributed and Parallel Computing with/for Python](http://dispy.sourceforge.net/index.html).
 
 1. Install the **nmap** software by typing this command into the terminal:
 
@@ -39,7 +39,7 @@ One of the Raspberry Pi computers will be used as the **client machine** giving 
     ```bash
     git clone http://github.com/raspberrypilearning/octapi-setup.git
     ```
-    The client software contains source code examples in Python 3 and a control bash script for rebooting and shutting down the cluster. If you are using the optional Unicorn HATs, the control script can be used with them too.
+    The client software contains source code examples in Python 3 and a control bash script for rebooting and shutting down the cluster. If you are using the optional Unicorn HATs, the control script can be used with them as well.
 
 1. Move all of the files from the `client` folder you just downloaded into the `/home/pi` folder:
 
