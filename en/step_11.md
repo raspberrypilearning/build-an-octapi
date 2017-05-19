@@ -10,7 +10,7 @@ From a terminal, type the following command to remove the `ip_list` file:
 rm ip_list
 ```
 
-You may need to manually 'ssh' into each server from the client so that the client recognises each server ssh key properly. If needed, this will only happen once.
+You may need to manually 'ssh' into each server from the client so that the client recognises each server ssh key properly. If at all, this will only be needed once.
 
 ```bash
 ssh <ip address of server>
@@ -28,7 +28,7 @@ Example:
 ./cluster_action.sh reboot
 ```
 
-**shutdown** – this shuts down each server and places it into a safe state. If a server is not shut down correctly, it may cause the micro SD card to be corrupted and cause the processor to fail to boot when next used.
+**shutdown** – this shuts down each server and places it into a safe state. If a server is not shut down correctly, it may cause the micro SD card to be corrupted and lead to the processor failing to boot when next used.
 
 Example:
 
