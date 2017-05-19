@@ -22,6 +22,6 @@ Still using the **server** Raspberry Pi, we need to switch from the internet-con
 
     Remove any entries in `wpa_suplicant` that are for Wi-Fi networks other than OctaPi, then press `Ctrl` + `o` to save and `Ctrl` + `x` to exit.
 
-    **Important:** If alternative Wi-Fi networks are not removed, your server may log onto the wrong network and not be available to the client.
+    **Important:** If alternative Wi-Fi networks are not removed, your server may log into the wrong network and not be available to the client.
 
 1. When finished, shut down the server Raspberry Pi.
