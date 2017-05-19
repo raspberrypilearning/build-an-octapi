@@ -6,16 +6,16 @@
 
     ![Open a terminal](images/terminal.png)
 
-1. Try runnning the "compute.py" example software again by typing the following command:
+1. Try running the "compute.py" example software again by typing the following command:
 
     ```bash
     sudo python3 compute.py
     ```
 
-    If the OctaPi is working correctly, you will see all the servers being used to run the jobs listed in the table at the end of the run.
+    If the OctaPi is working correctly, at the end of the run all the servers used to execute the job will be listed in the table.
 
 
-1. Try runnning the `compute_pi_efficient.py` example software
+1. Try running the `compute_pi_efficient.py` example software:
 
 
     ```bash
