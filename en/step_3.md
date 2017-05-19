@@ -1,8 +1,8 @@
 # Set up the wireless router
 
-The processors in your OctaPi cluster will communicate over a dedicated local Wi-Fi network. The router does **not** need to be connected to the internet for operation of the cluster, nor does it need to be online for setup.
+The processors in your OctaPi cluster will communicate via a dedicated local Wi-Fi network established by a wireless router. The router does **not** need to be connected to the internet for operation of the cluster, nor does it need to be online for setup.
 
-We will assume you are using a brand new router.
+We will assume you are using a brand-new router.
 
 1. Power on your wireless router.
 
@@ -10,7 +10,7 @@ We will assume you are using a brand new router.
 
 1. Follow the instructions for setting up your router that came with the device. This normally involves opening a web browser and navigating to your router's 'admin' page to start changing the router settings. The 'admin' login credentials will have been provided by your Wi-Fi router manufacturer.
 
-1. Look for a setting which allows you to set the Wi-Fi network name (also called SSID) and set it to "OctaPi". For example the page may look like this:
+1. Look for a setting which allows you to set the Wi-Fi network name (also called SSID) and change it to "OctaPi". For example the page may look like this:
 
     ![Set the SSID](images/router-ssid.png)
 
@@ -26,7 +26,7 @@ We will assume you are using a brand new router.
 
     **Important:** Make sure you write down the password so that you can use it to log onto your dedicated "OctaPi" network.
 
-1. Look for the DHCP settings. DHCP is a protocol used for issuing IP addresses automatically, the client and servers will use this to determine their IP addresses. The settings for DHCP may be under 'LAN'. Make sure DHCP is enabled and set the DHCP address range to something that provides a useful range of addresses; we chose `192.168.1.2` to `192.168.1.254`, but this is not critical.
+1. Look for the DHCP settings. DHCP is a protocol used for issuing IP addresses automatically. tThe client and servers will use this to determine their IP addresses. The settings for DHCP may be under 'LAN'. Make sure DHCP is enabled and set the DHCP address range to something that provides a useful range of addresses; we chose `192.168.1.2` to `192.168.1.254`, but this is not critical.
 
     ![Set the DHCP range](images/router-dhcp.png)
 
