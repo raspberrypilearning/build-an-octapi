@@ -18,7 +18,7 @@
 
     If the `compute.py` script does not work, review your steps one by one and check that client, server, and router are all set up correctly and working properly.
 
-1. If the test worked, use the client to manually shut down the server (replacing <remote_ip> with the IP address of the **server** you noted down earlier):
+1. If the test worked, use the client to manually shut down the server (replacing `<remote_ip>` with the IP address of the **server** you noted down earlier):
 
     ```bash
     ssh <remote_ip>;
@@ -31,4 +31,4 @@
 
 1. Once the server is shut down, remove its micro SD card.
 
-1. Using an SD card duplicator or a computer which is able to read SD cards, create seven more identical copies of this SD card and insert these into the other servers so that you have a total of eight.
+1. Using an SD card duplicator or a computer which is able to read SD cards, create seven more identical copies of this SD card and insert them into the other servers so that you have a total of eight.
