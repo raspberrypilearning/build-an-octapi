@@ -24,7 +24,7 @@
 
     This key is used to help the `cluster_action.sh` script (provided with the client software) to run with the servers.
 
-1. Find the IP address of the server machine you noted down earlier, and replacing `<remote ip>` with the **server's** IP address, run this command in a terminal to copy the key to the server:
+1. Find the IP address of the server machine you noted down earlier, and run this command in a terminal to copy the key to the server (replace `<remote ip>` with the **server's** IP address):
 
     ```bash
     ssh-copy-id -i ~/.ssh/id_rsa.pub <remote ip>
