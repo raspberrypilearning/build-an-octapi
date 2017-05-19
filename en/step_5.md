@@ -31,7 +31,11 @@ Each of the Raspberry Pi 3 computers which will form the OctaPi cluster needs to
     curl https://get.pimoroni.com/unicornhat | bash
     ```
 
-1. Copy the 'start_unicorn.sh' bash script that we downloaded with the client software into the /home/pi folder of the server. The file can be transferred using a USB memory stick. **[Needs a bit of clarification]**
+    Make sure you are in the `/home/pi` folder and also download the `start_unicorn.sh` bash script for installation on the server
+
+    ```bash
+    wget https://raw.githubusercontent.com/raspberrypilearning/octapi-setup/server/start_unicorn.sh
+    ```
 
 1. Go back to the terminal window and type the following command to begin editing the `\etc\rc.local` file:
 

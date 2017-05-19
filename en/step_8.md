@@ -4,7 +4,9 @@
 
 1. Open a terminal on the **client**
 
-1. Type the following command to run the `compute.py` example software provided with the client software examples you downloaded earlier:
+    ![Terminal](images/terminal.png)
+
+1. Make sure you are in the `/home/pi` directory and type the following command to run the `compute.py` example software provided with the client software examples you downloaded earlier:
 
     ```bash
     sudo python3 compute.py

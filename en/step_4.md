@@ -34,17 +34,17 @@ One of the Raspberry Pi computers will be used as the **client machine** giving 
     curl https://get.pimoroni.com/unicornhat | bash
     ```
 
-
-1. Download the OctaPi client software by typing this command into the terminal: **[TO DO: ADD THIS URL ONCE KNOWN]**
-
-    The client software contains source code examples in Python 3 and a control bash script for rebooting and shutting down the cluster
-    Download the `start_unicorn.sh` bash script for installation on the server
+1. Make sure you are in the `/home/pi` directory, then download the OctaPi client software by typing this command into the terminal:
 
     ```bash
-    wget url.to.be.decided
+    git clone http://github.com/raspberrypilearning/octapi-setup.git
+    ```
+    The client software contains source code examples in Python 3 and a control bash script for rebooting and shutting down the cluster. If you are using the optional Unicorn HATs the control script can be used with them too.
+
+1. Move all of the files from the `client` folder you just downloaded into the `/home/pi` folder:
+
+    ```bash
+    mv /home/pi/octapi-setup/client/* /home/pi
     ```
 
-    If you are using the optional Unicorn HATs the control script can be used with them too.
-
-
-1. Shutdown your new OctaPi client for the time being and set aside the client SD card in a safe place.
+1. Shut down your new OctaPi client for the time being and set aside the client SD card in a safe place.

@@ -1,7 +1,6 @@
 # Using the completed the OctaPi for the first time
 
-1. Ensure that the dedicated Wi-Fi router, client and OctaPi servers are all powered up. It's best to power up Wi-Fi the router well in advance so that you can be sure
-it is fully booted before the OctaPi client and servers attempt to log into it.
+1. Ensure that the dedicated Wi-Fi router, client and OctaPi servers are all powered up. It's best to power up Wi-Fi the router well in advance so that you can be sure it is fully booted before the OctaPi client and servers attempt to log into it.
 
 1. On the **client** machine, open a terminal
 
