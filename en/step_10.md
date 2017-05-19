@@ -19,7 +19,7 @@
 
 
     ```bash
-    sudo python3 compute_pi_effient.py 1000 100000
+    sudo python3 compute_pi_efficient.py 1000 100000
     ```
 
     If the OctaPi is working properly, you can start to do useful calculations, like this estimation of the value of Pi using the 'dartboard' method.
