@@ -28,5 +28,3 @@ steps:
     duration: 60
   - title: Step nine - Controlling the cluster
     duration: 60
-  - title: Challenge
-    duration: 60
