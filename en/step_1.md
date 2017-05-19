@@ -3,11 +3,11 @@
 In this resource you will make a distributed computer system using:
 
 - eight Raspberry Pi 3 computers acting as **servers**
-- another Raspberry Pi acting as **client**, which will control the servers
+- another Raspberry Pi 3 acting as **client** which will control the servers
 
 ![OctaPi system](images/octapi-system.png)
 
-This is known as a **cluster computer**, a kind of cloud computer. The power of the eight server CPUs (32 cores) will allow you to execute computations from the client CPU much faster than the client could perform them on its own. Once you complete this project, you will be able to develop applications in Python 3 on the client and run them on the cluster.
+This is known as a **cluster computer**, a kind of cloud computer. The power of the eight server CPUs (32 cores) will allow you to execute computations from the client CPU much faster than the client could perform them on its own. Once you complete this project, you will be able to develop applications in Python 3 on the client and run them on your cluster.
 
 There are three steps you will need to take to make an OctaPi:
 
