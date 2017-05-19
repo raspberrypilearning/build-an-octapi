@@ -4,7 +4,7 @@ Each of the Raspberry Pi 3 computers which will form the OctaPi cluster needs to
 
 1. On a fresh SD card, install the latest version of Raspbian by following the [software guide instructions](https://www.raspberrypi.org/learning/software-guide/quickstart/)
 
-1. Boot up a Raspberry Pi 3 using this SD card with a keyboard, screen and mouse connected. Also ensure you are connected to the internet before proceeding.
+1. Boot up a Raspberry Pi 3 using this SD card with a keyboard, screen, and mouse connected. Also ensure you are connected to the internet before proceeding.
 
 1. Open a terminal
 
@@ -43,7 +43,7 @@ Each of the Raspberry Pi 3 computers which will form the OctaPi cluster needs to
     sudo nano \etc\rc.local
     ```
 
-1. At the bottom of the file add the following lines to run the **dispy** server software as a daemon each time the server boots:
+1. At the bottom of the file, add the following lines to run the **dispy** server software as a daemon each time the server boots:
 
     ```bash
     sleep 20
@@ -51,7 +51,7 @@ Each of the Raspberry Pi 3 computers which will form the OctaPi cluster needs to
     dispynode.py -i "$_IP" --client_shutdown --daemon
     ```
 
-    **Note:** The sleep for 20 seconds is to allow time for the server to log onto your Wi-Fi router and obtain a network IP address from it. We need the IP address so that the server will listen for the client on the network properly. You may need to adjust the amount of delay to suit the router you are using.
+    **Note:** The sleep for 20 seconds is to allow time for the server to log onto your Wi-Fi router and obtain a network IP address from it. We need the IP address so that the server will listen properly for the client on the network. You may need to adjust the amount of delay to suit the router you are using.
 
 1. Press `Ctrl` + `o` to save your changes, then `Ctrl` + `x` to exit the nano editor.
 
