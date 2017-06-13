@@ -1,12 +1,12 @@
 # Check that it works
 
-1. Make sure your dedicated "OctaPi" router is powered on and fully booted up, the **client** is booted with peripherals attached, and the **server** is booted with only a power lead attached.
+- Make sure your dedicated "OctaPi" router is powered on and fully booted up, the **client** is booted with peripherals attached, and the **server** is booted with only a power lead attached.
 
-1. Open a terminal on the **client**
+- Open a terminal on the **client**
 
     ![Terminal](images/terminal.png)
 
-1. Make sure you are in the `/home/pi` directory and type the following command to run the `compute.py` example software provided with the client software examples you downloaded earlier:
+- Make sure you are in the `/home/pi` directory and type the following command to run the `compute.py` example software provided with the client software examples you downloaded earlier:
 
     ```bash
     sudo python3 compute.py
@@ -18,7 +18,7 @@
 
     If the `compute.py` script does not work, review your steps one by one and check that client, server, and router are all set up correctly and working properly.
 
-1. If the test worked, use the client to manually shut down the server (replacing `<remote_ip>` with the IP address of the **server** you noted down earlier):
+- If the test worked, use the client to manually shut down the server (replacing `<remote_ip>` with the IP address of the **server** you noted down earlier):
 
     ```bash
     ssh <remote_ip>;
@@ -29,6 +29,6 @@
 
     In future we will be using the `cluster_action.sh` script to do this.
 
-1. Once the server is shut down, remove its micro SD card.
+- Once the server is shut down, remove its micro SD card.
 
-1. Using an SD card duplicator or a computer which is able to read SD cards, create seven more identical copies of this SD card and insert them into the other servers so that you have a total of eight.
+- Using an SD card duplicator or a computer which is able to read SD cards, create seven more identical copies of this SD card and insert them into the other servers so that you have a total of eight.
