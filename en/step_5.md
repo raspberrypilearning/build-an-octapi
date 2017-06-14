@@ -2,7 +2,7 @@
 
 Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro SD card prepared. However, as each card is identical, you can set up just one server and check it's working before replicating the SD card for the other servers.
 
-- On a fresh SD card, install the latest version of Raspbian by following the [software guide instructions](https://www.raspberrypi.org/learning/software-guide/quickstart/).
+- On a fresh SD card, install the latest version of Raspbian by following the [software guide instructions](https://www.raspberrypi.org/learning/software-guide/quickstart/){:target="_blank"}.
 
 - Boot up a Raspberry Pi 3 using this SD card with a keyboard, screen, and mouse connected. Also ensure you are connected to the internet before proceeding.
 

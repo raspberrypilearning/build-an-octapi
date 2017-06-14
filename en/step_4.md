@@ -2,7 +2,7 @@
 
 One of the Raspberry Pi computers will be used as the **client machine** giving access to the servers in the OctaPi cluster. You will need the usual peripherals (monitor, keyboard, mouse) connected to this Raspberry Pi in order to use it to control the OctaPi.
 
-- On your micro SD card, install the latest version of Raspbian by following the [software guide instructions](https://www.raspberrypi.org/learning/software-guide/quickstart/).
+- On your micro SD card, install the latest version of Raspbian by following the [software guide instructions](https://www.raspberrypi.org/learning/software-guide/quickstart/){:target="_blank"}.
 
 - Using this micro SD card, boot up the Raspberry Pi 3 with a keyboard, screen, and mouse connected and ensure it is also connected to the internet.
 
@@ -18,7 +18,7 @@ One of the Raspberry Pi computers will be used as the **client machine** giving 
 
     Dispy is a distributed Python implementation that will allow you to write code on the client and run it across the servers.
 
-    Further information on Dispy is available from [dispy: Distributed and Parallel Computing with/for Python](http://dispy.sourceforge.net/index.html).
+    Further information on Dispy is available from [dispy: Distributed and Parallel Computing with/for Python](http://dispy.sourceforge.net/index.html){:target="_blank"}.
 
 - Install the **nmap** software by typing this command into the terminal:
 
