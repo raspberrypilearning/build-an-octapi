@@ -26,7 +26,7 @@ We will assume you are using a brand-new router or have factory reset your route
 
     **Important:** Make sure you write down the password so that you can use it to log into your dedicated "OctaPi" network.
 
-- Look for the DHCP settings. DHCP is a protocol used for issuing IP addresses automatically. The client and servers will use this to determine their IP addresses. The settings for DHCP may be under 'LAN'. Make sure DHCP is enabled and set the DHCP address range to something that provides a useful range of addresses; we chose `192.168.1.2` to `192.168.1.254`, but this is not critical.
+- Look for the DHCP settings. DHCP is a protocol used for issuing IP addresses automatically. The client and servers will use this to determine their IP addresses. The settings for DHCP may be under 'LAN'. Make sure DHCP is enabled and set the DHCP address range to something that provides a useful range of addresses; we chose `192.168.1.2` to `192.168.1.254`. Using this particular range is not critical but changing your setup here will mean the IP addresses you see will differ from those shown in this guide. Only change this if you know what you are doing.
 
     ![Set the DHCP range](images/router-dhcp.png)
 
