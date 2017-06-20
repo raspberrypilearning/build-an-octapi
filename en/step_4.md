@@ -23,7 +23,7 @@ One of the Raspberry Pi computers will be used as the **client machine** giving 
 - Install the **nmap** software by typing this command into the terminal:
 
     ```bash
-    sudo pip3 install nmap
+    sudo apt-get install nmap
     ```
 
     Nmap is used to discover the IP addresses of the Raspberry Pi servers forming the OctaPi cluster, so that they can be shut down or rebooted as needed.

@@ -14,13 +14,13 @@ Still using the **server** Raspberry Pi, we need to switch from the internet-con
 
 - We need to remove any previous Wi-Fi information to avoid confusion.
 
-    In a terminal window, type the following command to edit the `wpa_suplicant.conf` file:
+    In a terminal window, type the following command to edit the `wpa_supplicant.conf` file:
 
     ```bash
-    sudo nano \etc\wpa_suplicant\wpa_suplicant.conf
+    sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
     ```
 
-    Remove any entries in `wpa_suplicant` that are for Wi-Fi networks other than OctaPi, then press `Ctrl` + `o` to save and `Ctrl` + `x` to exit.
+    Remove any entries in `wpa_supplicant` that are for Wi-Fi networks other than OctaPi, then press `Ctrl` + `o` to save and `Ctrl` + `x` to exit.
 
     **Important:** If alternative Wi-Fi networks are not removed, your server may log into the wrong network and not be available to the client.
 
