@@ -37,7 +37,7 @@ One of the Raspberry Pi computers will be used as the **client machine** giving 
 - Make sure you are in the `/home/pi` directory, then download the OctaPi client software by typing this command into the terminal:
 
     ```bash
-    git clone http://github.com/raspberrypilearning/octapi-setup.git
+    git clone https://github.com/raspberrypilearning/octapi-setup.git
     ```
     The client software contains source code examples in Python 3 and a control bash script for rebooting and shutting down the cluster. If you are using the optional Unicorn HATs, the control script can be used with them as well.
 

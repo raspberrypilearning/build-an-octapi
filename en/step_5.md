@@ -16,13 +16,13 @@ Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro 
     sudo pip3 install dispy
     ```
 
-- Install the **psutils** software by typing this command into the terminal:
+- Install the **psutil** software by typing this command into the terminal:
 
     ```
-    sudo pip3 install psutils
+    sudo pip3 install psutil
     ```
 
-    **Dispy** uses psutils for reporting CPU usage of the servers in the cluster.
+    **Dispy** uses psutil for reporting CPU usage of the servers in the cluster.
 
 
 - If you are using the optional Pimoroni **Unicorn HATs**, install the software for them by typing this command into the terminal:
@@ -40,10 +40,10 @@ Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro 
 - Go back to the terminal window and type the following command to begin editing the `\etc\rc.local` file:
 
     ```
-    sudo nano \etc\rc.local
+    sudo nano /etc/rc.local
     ```
 
-- At the bottom of the file, add the following lines to run the **dispy** server software as a daemon each time the server boots:
+- At the bottom of the file, add the following lines to run the **dispy** server software as a daemon (a process running in the background) each time the server boots:
 
     ```bash
     sleep 20
