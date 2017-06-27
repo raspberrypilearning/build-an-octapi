@@ -40,6 +40,12 @@ Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro 
     ```bash
     wget https://raw.githubusercontent.com/raspberrypilearning/octapi-setup/server/start_unicorn.sh
     ```
+    
+    Make this script executable by typing this command:
+    
+    ```bash
+    chmod u+x ./start_unicorn.sh
+    ```
 
 - Go back to the terminal window and type the following command to begin editing the `/etc/rc.local` file:
 
