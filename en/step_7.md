@@ -27,7 +27,7 @@
 - On the **client**, run `ssh-keygen` in the terminal to create a key for authenticating the client with the server.
 
     ```bash
-    ssh-keygen;
+    ssh-keygen
     ```
 
     This key is used to help the `cluster_action.sh` script (provided with the client software) to run with the servers.
