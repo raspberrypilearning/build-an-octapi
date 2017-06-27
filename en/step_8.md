@@ -11,10 +11,24 @@
     ```bash
     sudo python3 compute.py
     ```
+    The `compute.py` Python script runs 15 jobs on your server. They are all just random delays before returning. If the OctaPi is working correctly, the jobs will complete in about a minute and a table showing the statistics for the application will be shown in the terminal. You should see a result similar to this:
+    
+    ```bash
+    
+                               Node |  CPUs |    Jobs |    Sec/Job | Node Time Sec
+    ------------------------------------------------------------------------------
+     192.168.1.49 (raspberrypi)     |     4 |       4 |     16.040 |        64.160
+     192.168.1.202 (raspberrypi)    |     4 |       2 |     12.031 |        24.062
+     192.168.1.191 (raspberrypi)    |     4 |       2 |     13.029 |        26.058
+     192.168.1.223 (raspberrypi)    |     4 |       0 |      0.000 |         0.000
+     192.168.1.116 (raspberrypi)    |     4 |       2 |     10.025 |        20.050
+     192.168.1.27 (raspberrypi)     |     4 |       2 |     15.535 |        31.070
+     192.168.1.167 (raspberrypi)    |     4 |       4 |     14.537 |        58.148
+     192.168.1.50 (raspberrypi)     |     4 |       0 |      0.000 |         0.000
+    
+    Total job time: 223.548 sec, wall time: 20.245 sec, speedup: 11.042
+    ```
 
-    **Important:** Use the version of `compute.py` from the OctaPi client software examples, as this specifies the `192.168.1.*` network. If you use the version that comes with Dispy, it will default to the wrong IP address for OctaPi.
-
-    The `compute.py` Python script runs 15 jobs on your server. They are all just random delays before returning. If the OctaPi is working correctly, the jobs will complete in about a minute and a table showing the statistics for the application will be shown in the terminal.
 
     If the `compute.py` script does not work, review your steps one by one and check that client, server, and router are all set up correctly and working properly.
 
