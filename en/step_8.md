@@ -28,7 +28,7 @@
 - If the test worked, use the client to manually shut down the server (replacing `<remote_ip>` with the IP address of the **server** you noted down earlier):
 
     ```bash
-    ssh <remote_ip>;
+    ssh <remote_ip>
     sudo shutdown -HP now
     ```
 
