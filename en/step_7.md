@@ -11,7 +11,7 @@
 - Type the following command to find the IP address of the **client** Raspberry Pi:
 
     ```bash
-    hostname -l
+    hostname -I
     ```
 
 - Type the following command to find out the IP address of the **server** Raspberry Pi:
