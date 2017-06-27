@@ -29,6 +29,8 @@
     ```bash
     ssh-keygen
     ```
+    
+    Press Enter when asked where to save the key, and press Enter again twice when asked for a passphrase, leaving it empty.
 
     This key is used to help the `cluster_action.sh` script (provided with the client software) to run with the servers.
 
