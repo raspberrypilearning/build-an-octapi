@@ -53,11 +53,11 @@ Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro 
     sudo nano /etc/rc.local
     ```
 
-- At the bottom of the file, add the following lines to run the **dispy** server software as a daemon (a process running in the background) each time the server boots:
+- Near the bottom of the file, just before `exit 0`, add the following lines to run the **dispy** server software as a daemon (a process running in the background) each time the server boots:
 
     ```bash
     sleep 20
-    _IP=$(hostname -I);
+    _IP=$(hostname -I)
     dispynode.py -i "$_IP" --client_shutdown --daemon
     ```
 
