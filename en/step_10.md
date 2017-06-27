@@ -12,7 +12,7 @@
     sudo python3 compute.py
     ```
 
-    If the OctaPi is working correctly, at the end of the run all the servers used to execute the job will be listed in the table.
+    If the OctaPi is working correctly, at the end of the run all the servers used to execute the job will be listed in the table. If the Octapi is working, the result should look similar to this.
     
     ```bash
     
