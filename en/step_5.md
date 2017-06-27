@@ -31,7 +31,11 @@ Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro 
     curl https://get.pimoroni.com/unicornhat | bash
     ```
 
-    Make sure you are in the `/home/pi` folder and also download the `start_unicorn.sh` bash script for installation on the server
+    You will need to restart your Pi after installing the Unicorn HAT software.
+    
+    Then, make sure you are in the `/home/pi` folder by typing `cd /home/pi`.
+    
+    Download the `start_unicorn.sh` bash script for installation on the server using this command:
 
     ```bash
     wget https://raw.githubusercontent.com/raspberrypilearning/octapi-setup/server/start_unicorn.sh
