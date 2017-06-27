@@ -33,6 +33,8 @@ One of the Raspberry Pi computers will be used as the **client machine** giving 
     ```bash
     curl https://get.pimoroni.com/unicornhat | bash
     ```
+    
+    You will need to reboot your Pi after installing the Unicorn HAT software. 
 
 - Make sure you are in the `/home/pi` directory, then download the OctaPi client software by typing this command into the terminal:
 
