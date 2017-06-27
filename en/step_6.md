@@ -20,7 +20,21 @@ Still using the **server** Raspberry Pi, we need to switch from the internet-con
     sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
     ```
 
-    Remove any entries in `wpa_supplicant` that are for Wi-Fi networks other than OctaPi, then press `Ctrl` + `o` to save and `Ctrl` + `x` to exit.
+    The file contents look like this
+
+    ```bash
+    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+    update_config=1
+    country=GB
+
+    network={
+	    ssid="OctaPi"
+	    psk="mynetworkpassword"
+	    key_mgmt=WPA-PSK
+    }
+    ```
+
+    Remove any 'network { }' sections for other networks and press `Ctrl` + `o` to save and `Ctrl` + `x` to exit.
 
     **Important:** If alternative Wi-Fi networks are not removed, your server may log into the wrong network and not be available to the client.
 
