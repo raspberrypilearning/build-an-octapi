@@ -39,5 +39,7 @@
     ```bash
     ssh-copy-id -i ~/.ssh/id_rsa.pub <remote ip>
     ```
+    
+    You will be asked if you want to continue connecting. Type `yes` and press Enter. You will be asked for the server Pi's password which will be the default password of `raspberry`.
 
     This completes preparation of the client and server. We now need to check everything is correct and working properly with a single server.
