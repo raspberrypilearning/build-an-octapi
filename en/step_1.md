@@ -2,12 +2,12 @@
 
 In this resource you will make a distributed computer system using:
 
-- eight Raspberry Pi 3 computers acting as **servers**
-- another Raspberry Pi 3 acting as **client** which will control the servers
+- Eight Raspberry Pi 3 computers acting as **servers**
+- Another Raspberry Pi 3 acting as **client** which controls the servers
 
 ![OctaPi system](images/octapi-system.png)
 
-This is known as a **cluster computer**, a kind of cloud computer. The power of the eight server CPUs (32 cores) will allow you to execute computations from the client CPU much faster than the client could perform them on its own. Once you complete this project, you will be able to develop applications in Python 3 on the client and run them on your cluster.
+This system is known as a **cluster computer**, a kind of cloud computer. The power of the eight server CPUs (32 cores) will allow you to execute computations from the client CPU much faster than the client could perform them on its own. Once you complete this project, you will be able to develop applications in Python 3 on the client and run them on your cluster.
 
 There are three steps you will need to take to make an OctaPi:
 
@@ -15,9 +15,9 @@ There are three steps you will need to take to make an OctaPi:
 - Create a client machine
 - Create eight servers
 
-**NOTE:** You don't actually need exactly eight servers, as the cluster will work with any number of servers up to limits determined by the performance of your Wi-Fi router. If you don't have enough Raspberry Pis available to make an OctaPi, why not make a HexaPi (6) or a TetraPi (4)?
+**NOTE:** You don't actually need eight servers, as the cluster will work with any number of servers up to limits determined by the performance of your WiFi router. If you don't have enough Raspberry Pis available to make an OctaPi, why not make a HexaPi (6) or a TetraPi (4)?
 
-If you want to make your cluster look pretty, you can optionally fit Pimoroni Unicorn HAT 8x8 LED arrays to each server. The bash control script on the client machine can be used to change the patterns on the Unicorn HATs.
+If you want to make your cluster look pretty, you can fit Pimoroni Unicorn HAT 8x8 LED arrays to each server. A bash control script on the client machine can be used to change the patterns on the Unicorn HATs.
 
 ## Licence
 
