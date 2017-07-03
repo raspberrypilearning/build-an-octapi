@@ -34,7 +34,7 @@ If you  are seeing unexpected content, or missing content, this is most likely b
     }
     ```
 
-Remove any 'network { }' sections for other networks, and press `Ctrl` + `o` to save your changes and then `Ctrl` + `x` and exit nano. Reboot the client for the changes to take effect.
+Remove any 'network { }' sections for other networks, and press `Ctrl` + `o` to save your changes and then `Ctrl` + `x` to exit nano. Reboot the client for the changes to take effect.
 
 ## I get messages saying there is 'no route to host' when using the `cluster_action.sh` script.
 This can happen if the network connection is unreliable and causes the router to drop an IP address. It can also happen if you have more servers connected to your router than it can handle. Network reliability is affected by how close the router is to the rest of the system and by how many other WiFi networks are present. Try moving the OctaPi router to within a couple of metres of the OctaPi system and/or moving away from other WiFi routers.
