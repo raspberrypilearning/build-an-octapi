@@ -4,7 +4,9 @@ Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro 
 
 - On a fresh SD card, install the latest version of Raspbian by following the [software guide instructions](https://www.raspberrypi.org/learning/software-guide/quickstart/){:target="_blank"}.
 
-- Boot up a Raspberry Pi 3 using this SD card with a keyboard, screen, and mouse connected. Also ensure you are connected to the internet before proceeding.
+- Boot up a Raspberry Pi 3 using this SD card with a keyboard, screen, and mouse connected. 
+
+- Ensure the Raspberry Pi is connected to the internet 
 
 - Open a terminal.
 
