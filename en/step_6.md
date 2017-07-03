@@ -34,7 +34,7 @@ Still using the **server** Raspberry Pi, we need to switch from the internet-con
     }
     ```
 
-    Remove any 'network { }' sections for other networks and press `Ctrl` + `o` to save and `Ctrl` + `x` to exit.
+    Remove any 'network { }' sections for other networks, press `Ctrl` + `o` to save and `Ctrl` + `x` to exit.
 
     **Note:** If alternative WiFi networks are not removed, your server may log into the wrong network and not be available to the client.
 
