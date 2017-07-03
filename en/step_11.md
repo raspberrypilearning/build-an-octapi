@@ -59,7 +59,7 @@ sudo date -s "11 Apr 2017 12:42"
 ./cluster_action.sh date
 ```
 
-`unicorn` – invokes the unicorn script on each server and passes it the name and location of a Pimoroni Python script as a parameter. For this to work you need to have `start_unicorn.sh` in `/home/pi` on each server as described earlier.
+`unicorn` – invokes the `start_unicorn.sh` script on each server and passes it the name and location of a Pimoroni Python script as a parameter. For this to work you need to have `start_unicorn.sh` in `/home/pi` on each server as described earlier.
 
 Example:
 
