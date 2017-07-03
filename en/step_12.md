@@ -53,7 +53,7 @@ This may happen the first time you run the script because the client hasn't seen
     hostname -I
     ```
 
-- Ignore '192.168.1.1', as this is the 'OctaPi' router, and ignore the client IP address which you just found out with the previous command. From the client machine, manually log in to each of the other IP addresses listed via SSH. When you are prompted, say 'yes' to the question to proceed, then type `exit` again.
+- Ignore '192.168.1.1', as this is the 'OctaPi' router, and ignore the client IP address. From the client machine, log in via SSH to the servers one by one using the other IP addresses listed. When you are prompted, say 'yes' to proceed, then type `exit` again.
 
     ```bash
     ssh <ip_address>
