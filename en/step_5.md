@@ -60,7 +60,7 @@ Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro 
     ```bash
     sleep 20
     _IP=$(hostname -I)
-    /usr/local/bin/dispynode.py -i "$_IP" --daemon
+    /usr/local/bin/dispynode.py -i "$_IP" --daemon --client_shutdown
     ```
 
     **Note:** The sleep for 20 seconds is to allow time for the server to log onto your Wi-Fi router and obtain a network IP address from it. You need the IP address so that the server will listen properly for the client on the network. You may have to adjust this delay to suit the router you are using.
