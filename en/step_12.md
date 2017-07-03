@@ -71,9 +71,9 @@ This can happen if the client and one or more servers have got out of sync, and 
 
 To cure this, try to determine which bit of code has the error and fix it first. Then reboot the cluster with the `cluster_action.sh` script.
 
-    ```bash
-    ./cluster_action reboot
-    ```
+```bash
+./cluster_action reboot
+```
 
 The servers should all reboot into the same state and be ready to accept jobs from the client. Depending on the condition of the client following a crash, it may also need rebooting.
 
