@@ -4,7 +4,9 @@ One of the Raspberry Pi computers will be used as the **client machine** giving 
 
 - On your micro SD card, install the latest version of Raspbian by following the [software guide instructions](https://www.raspberrypi.org/learning/software-guide/quickstart/){:target="_blank"}.
 
-- Using this micro SD card, boot up the Raspberry Pi 3 with a keyboard, screen, and mouse connected and ensure it is also connected to the internet.
+- Using this micro SD card, boot up the Raspberry Pi 3 with a keyboard, screen, and mouse connected
+
+- Ensure the Raspberry Pi is also connected to the internet.
 
 - Open a terminal window.
 
