@@ -1,6 +1,6 @@
 ## Troubleshooting
 
-## When I try and run the `cluster_action.sh` script, I get 'permission denied'.
+## When I try and run the cluster_action.sh script, I get 'permission denied'.
 This file is a bash script and requires execute permission. The error probably occurs because the execute permission is not set for some reason.
 
 - Make sure you are in the `/home/pi` directory by typing `cd /home/pi` in a terminal window.
@@ -11,7 +11,7 @@ This file is a bash script and requires execute permission. The error probably o
     chmod u+x cluster_action.sh
     ```
 
-## The `ip_list` file only has the router IP and client IP addresses listed - where are the servers?
+## The ip_list file only has the router IP and client IP addresses listed - where are the servers?
 If you  are seeing unexpected content, or missing content, this is most likely because the client machine is not logged into the OctaPi network when `cluster_action.sh` is run. This can happen if you did not remove other WiFi networks from `/etc/wpa_supplicant/wpa_supplicant.conf`. The client will log into the best available WiFi network, which may not be the OctaPi network.
 
 - To edit the `wpa_supplicant.conf` file, use nano as follows:
@@ -36,10 +36,10 @@ If you  are seeing unexpected content, or missing content, this is most likely b
 
 Remove any 'network { }' sections for other networks, and press `Ctrl` + `o` to save your changes and then `Ctrl` + `x` to exit nano. Reboot the client for the changes to take effect.
 
-## I get messages saying there is 'no route to host' when using the `cluster_action.sh` script.
+## I get messages saying there is 'no route to host' when using the cluster_action.sh script.
 This can happen if the network connection is unreliable and causes the router to drop an IP address. It can also happen if you have more servers connected to your router than it can handle. Network reliability is affected by how close the router is to the rest of the system and by how many other WiFi networks are present. Try moving the OctaPi router to within a couple of metres of the OctaPi system and/or moving away from other WiFi routers.
 
-## I get 'host key verification failed' messages when I run the `cluster_action.sh` script.
+## I get 'host key verification failed' messages when I run the cluster_action.sh script.
 This may happen the first time you run the script because the client hasn't seen the server IP addresses before when performing an SSH login. To fix this, do the following.
 
 - Open a terminal and type in this command to list the IP addresses allocated to your servers:
