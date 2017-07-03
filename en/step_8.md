@@ -17,9 +17,9 @@
     
                                Node |  CPUs |    Jobs |    Sec/Job | Node Time Sec
     ------------------------------------------------------------------------------
-     192.168.1.49 (raspberrypi)     |     4 |       4 |     16.040 |        64.160
+     192.168.1.3 (raspberrypi)     |     4 |       16 |     12.841 |        205.460
     
-    Total job time: 223.548 sec, wall time: 20.245 sec, speedup: 11.042
+    Total job time: 205.460 sec, wall time: 57.347 sec, speedup: 3.583
     ```
 
 
