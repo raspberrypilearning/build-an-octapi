@@ -22,7 +22,7 @@ steps:
     duration: 60
   - title: Step six - Check that it works
     duration: 60
-  - title: Step seven - OctaPi physical set up
+  - title: Step seven - OctaPi physical set-up
     duration: 60
   - title: Step eight - Using the completed OctaPi
     duration: 60
