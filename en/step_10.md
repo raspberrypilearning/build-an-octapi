@@ -1,18 +1,18 @@
 ## Using the completed OctaPi for the first time
 
-- Ensure that the dedicated Wi-Fi router, client, and OctaPi servers are all powered up. It's best to power up the Wi-Fi router well in advance so that you can be sure it is fully booted before the OctaPi client and servers attempt to log into it.
+- Ensure that the dedicated WiFi router, client, and OctaPi servers are all powered up. It's best to power up the WiFi router well in advance so that you can be sure it is fully booted before the OctaPi client and servers attempt to log into it.
 
-- On the **client** machine, open a terminal.
+- On the client machine, open a terminal.
 
     ![Open a terminal](images/terminal.png)
 
-- Try running the "compute.py" example software again by typing the following command:
+- Try running the `compute.py` example software again by typing the following command:
 
     ```bash
     sudo python3 compute.py
     ```
 
-    If the OctaPi is working correctly, at the end of the run all the servers used to execute the job will be listed in the table. If the Octapi is working, the result should look similar to this.
+    If the OctaPi is working correctly, at the end of the run all the servers used to execute the job will be listed in the table. The result should look similar to this.
 
     ```bash
 
