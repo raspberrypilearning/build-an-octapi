@@ -1,30 +1,30 @@
 ## Set up one OctaPi server
 
-Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro SD card prepared. However, as each card is identical, you can set up just one server and check it's working before replicating the SD card for the other servers.
+Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro SD card prepared. However, as each card is identical, you can set up just one server, check it's working, and then replicate the SD card for the other servers.
 
-- On a fresh SD card, install the latest version of Raspbian by following the [software guide instructions](https://www.raspberrypi.org/learning/software-guide/quickstart/){:target="_blank"}.
+- On a new micro SD card, install the latest version of Raspbian by following the [software guide instructions](https://www.raspberrypi.org/learning/software-guide/quickstart/){:target="_blank"}.
 
 - Boot up a Raspberry Pi 3 using this SD card with a keyboard, screen, and mouse connected.
 
-- Ensure the Raspberry Pi is connected to the internet
+- Ensure the Raspberry Pi is connected to the internet.
 
 - Open a terminal.
 
     ![Open a terminal](images/terminal.png)
 
-- As with the client, install the **dispy** software by typing this command into the terminal:
+- As with the client, install `dispy` by typing this command into the terminal:
 
     ```
     sudo pip3 install dispy==4.7.1
     ```
 
-- Install the **psutil** software by typing this command into the terminal:
+- Install `psutil` by typing this command into the terminal:
 
     ```
     sudo pip3 install psutil
     ```
 
-    **Dispy** uses psutil for reporting CPU usage of the servers in the cluster.
+    `dispy` uses `psutil` for reporting CPU usage of the servers in the cluster.
 
 - Ensure you are in the `/home/pi` directory by typing `cd /home/pi`.
 
@@ -34,19 +34,19 @@ Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro 
     wget https://raw.githubusercontent.com/raspberrypilearning/octapi-setup/server/stop_dispy.sh
     ```
 
-    Make this script executable by typing this command:
+    Make the script executable by typing this command:
 
     ```bash
     chmod u+x ./stop_dispy.sh
     ```
 
-- If you are using the optional Pimoroni **Unicorn HATs**, install the software for them by typing this command into the terminal:
+- If you are using the Unicorn HATs, install the software for them by typing this command into the terminal:
 
     ```
     curl https://get.pimoroni.com/unicornhat | bash
     ```
 
-    You will need to restart your Pi after installing the Unicorn HAT software.
+    You will need to restart your Pi afterwards.
 
     Then, reopen the terminal and make sure you are in the `/home/pi` folder by typing `cd /home/pi`.
 
@@ -56,7 +56,7 @@ Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro 
     wget https://raw.githubusercontent.com/raspberrypilearning/octapi-setup/server/start_unicorn.sh
     ```
 
-    Make this script executable by typing this command:
+    Make the script executable by typing this command:
 
     ```bash
     chmod u+x ./start_unicorn.sh
@@ -68,7 +68,7 @@ Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro 
     sudo nano /etc/rc.local
     ```
 
-- Near the bottom of the file, just before `exit 0`, add the following lines to run the **dispy** server software as a daemon (a process running in the background) each time the server boots:
+- Near the bottom of the file, just before `exit 0`, add the following lines to run `dispy` as a daemon (a process running in the background) each time the server boots:
 
     ```bash
     sleep 20
@@ -76,11 +76,11 @@ Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro 
     /usr/local/bin/dispynode.py -i "$_IP" --daemon --client_shutdown
     ```
 
-    **Note:** The sleep for 20 seconds is to allow time for the server to log onto your Wi-Fi router and obtain a network IP address from it. You need the IP address so that the server will listen properly for the client on the network. You may have to adjust this delay to suit the router you are using.
+    **Note:** The sleep for 20 seconds is to allow time for the server to log onto your WiFi router and obtain a network IP address from it. You need the IP address so that the server will listen properly for the client on the network. You may have to adjust this delay to suit the router you are using.
 
 - Press `Ctrl` + `o` to save your changes, then `Ctrl` + `x` to exit the nano editor.
 
-- Check that remote login via SSH is enabled so that remote command line access to your server is possible. Under the Preferences menu, select Raspberry Pi Configuration.
+- Check that remote login via SSH is enabled so that remote command line access to your server is possible. In the **Preferences** menu, select **Raspberry Pi Configuration**.
 
     ![Enable SSH](images/enable-ssh1.png)
 
