@@ -67,7 +67,7 @@ sudo date -s "11 Apr 2017 12:42"
 Example:
 
 ```bash
-./cluster_action.sh unicorn /home/pi/Pimoroni/unicorn-hat/examples/random_sparkles.py
+./cluster_action.sh unicorn /home/pi/Pimoroni/unicornhat/examples/random_sparkles.py
 ```
 
  
