@@ -21,6 +21,18 @@ The `cluster_action.sh` script runs on the client and uses SSH to administer the
   chmod u+x ./cluster_action.sh
   ```
 
+### Ensure the client can recognise each server SSH key
+
+
+
+The first time you use the cluster, you may need to manually 'ssh' into each server from the client so that the client recognises each server ssh key properly (be sure to replace `<ip address of server>` with the actual server IP address).
+
+```bash
+ssh <ip address of server>
+```
+
+If at all, this will only be needed once.
+
 ### Options for the cluster_action script
 
 The following options are available as parameters accepted by the script:
@@ -58,16 +70,4 @@ Example:
 ./cluster_action.sh unicorn /home/pi/unicorn-hat/examples/random_sparkles.py
 ```
 
-  
-
-### Ensure the client can recognise each server SSH key
-
-
-
-The first time you use the cluster, you may need to manually 'ssh' into each server from the client so that the client recognises each server ssh key properly (be sure to replace `<ip address of server>` with the actual server IP address).
-
-```bash
-ssh <ip address of server>
-```
-
-If at all, this will only be needed once.
+ 
