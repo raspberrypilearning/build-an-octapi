@@ -1,4 +1,4 @@
-# Set up the client on the OctaPi network
+## Set up the client on the OctaPi network
 
 - Connect a monitor, keyboard, and mouse and power up a Raspberry Pi containing the **client** SD card you created earlier.
 
@@ -29,7 +29,7 @@
     ```bash
     ssh-keygen
     ```
-    
+
     Press Enter when asked where to save the key, and press Enter again twice when asked for a passphrase, leaving it empty.
 
     This key is used to help the `cluster_action.sh` script (provided with the client software) to run with the servers.
@@ -39,7 +39,7 @@
     ```bash
     ssh-copy-id -i ~/.ssh/id_rsa.pub <remote ip>
     ```
-    
+
     You will be asked if you want to continue connecting. Type `yes` and press Enter. You will be asked for the server Pi's password which will be the default password of `raspberry`.
 
     This completes preparation of the client and server. We now need to check everything is correct and working properly with a single server.

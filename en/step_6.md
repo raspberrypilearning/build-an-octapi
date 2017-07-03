@@ -1,4 +1,4 @@
-# Set up the server on the OctaPi network
+## Set up the server on the OctaPi network
 
 Still using the **server** Raspberry Pi, we need to switch from the internet-connected network to the OctaPi network. Ensure your OctaPi Wi-fi router is powered up and fully booted.
 

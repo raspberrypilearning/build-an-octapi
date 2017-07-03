@@ -1,4 +1,4 @@
-# Check that it works
+## Check that it works
 
 - Make sure your dedicated "OctaPi" router is powered on and fully booted up, the **client** is booted with peripherals attached, and the **server** is booted with only a power lead attached.
 
@@ -12,13 +12,13 @@
     sudo python3 compute.py
     ```
     The `compute.py` Python script runs 15 jobs on your server. They are all just random delays before returning. If the OctaPi is working correctly, the jobs will complete in about a minute and a table showing the statistics for the application will be shown in the terminal. You should see a result similar to this:
-    
+
     ```bash
-    
+
                                Node |  CPUs |    Jobs |    Sec/Job | Node Time Sec
     ------------------------------------------------------------------------------
      192.168.1.3 (raspberrypi)     |     4 |       16 |     12.841 |        205.460
-    
+
     Total job time: 205.460 sec, wall time: 57.347 sec, speedup: 3.583
     ```
 
@@ -40,4 +40,4 @@
 
 - Using an SD card duplicator or a computer which is able to read SD cards, create seven more identical copies of this SD card and insert them into the other servers so that you have a total of eight.
 
-**NOTE:** It is also possible (but time consuming) to create your eight SD cards by following the server setup instructions eight times. If you choose to use this method instead of duplicating the SD card image, you must run the `ssh-copy-id` command on the client once per server to copy the key across to each server separately. **DO NOT use the `ssh-keygen` command to regenerate the key.** Refer back to the client setup instructions for how to copy the key from the client to the server. 
+**NOTE:** It is also possible (but time consuming) to create your eight SD cards by following the server setup instructions eight times. If you choose to use this method instead of duplicating the SD card image, you must run the `ssh-copy-id` command on the client once per server to copy the key across to each server separately. **DO NOT use the `ssh-keygen` command to regenerate the key.** Refer back to the client setup instructions for how to copy the key from the client to the server.

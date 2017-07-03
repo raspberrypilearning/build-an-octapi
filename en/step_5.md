@@ -1,12 +1,12 @@
-# Set up one OctaPi server
+## Set up one OctaPi server
 
 Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro SD card prepared. However, as each card is identical, you can set up just one server and check it's working before replicating the SD card for the other servers.
 
 - On a fresh SD card, install the latest version of Raspbian by following the [software guide instructions](https://www.raspberrypi.org/learning/software-guide/quickstart/){:target="_blank"}.
 
-- Boot up a Raspberry Pi 3 using this SD card with a keyboard, screen, and mouse connected. 
+- Boot up a Raspberry Pi 3 using this SD card with a keyboard, screen, and mouse connected.
 
-- Ensure the Raspberry Pi is connected to the internet 
+- Ensure the Raspberry Pi is connected to the internet
 
 - Open a terminal.
 
@@ -33,9 +33,9 @@ Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro 
     ```bash
     wget https://raw.githubusercontent.com/raspberrypilearning/octapi-setup/server/stop_dispy.sh
     ```
-    
+
     Make this script executable by typing this command:
-    
+
     ```bash
     chmod u+x ./stop_dispy.sh
     ```
@@ -47,17 +47,17 @@ Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro 
     ```
 
     You will need to restart your Pi after installing the Unicorn HAT software.
-    
+
     Then, reopen the terminal and make sure you are in the `/home/pi` folder by typing `cd /home/pi`.
-    
+
     Download the `start_unicorn.sh` bash script for installation on the server using this command:
 
     ```bash
     wget https://raw.githubusercontent.com/raspberrypilearning/octapi-setup/server/start_unicorn.sh
     ```
-    
+
     Make this script executable by typing this command:
-    
+
     ```bash
     chmod u+x ./start_unicorn.sh
     ```

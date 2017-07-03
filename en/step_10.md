@@ -1,4 +1,4 @@
-# Using the completed OctaPi for the first time
+## Using the completed OctaPi for the first time
 
 - Ensure that the dedicated Wi-Fi router, client, and OctaPi servers are all powered up. It's best to power up the Wi-Fi router well in advance so that you can be sure it is fully booted before the OctaPi client and servers attempt to log into it.
 
@@ -13,9 +13,9 @@
     ```
 
     If the OctaPi is working correctly, at the end of the run all the servers used to execute the job will be listed in the table. If the Octapi is working, the result should look similar to this.
-    
+
     ```bash
-    
+
                                Node |  CPUs |    Jobs |    Sec/Job | Node Time Sec
     ------------------------------------------------------------------------------
      192.168.1.49 (raspberrypi)     |     4 |       4 |     16.040 |        64.160
@@ -26,7 +26,7 @@
      192.168.1.27 (raspberrypi)     |     4 |       2 |     15.535 |        31.070
      192.168.1.167 (raspberrypi)    |     4 |       4 |     14.537 |        58.148
      192.168.1.50 (raspberrypi)     |     4 |       0 |      0.000 |         0.000
-    
+
     Total job time: 223.548 sec, wall time: 20.245 sec, speedup: 11.042
     ```
 

@@ -1,4 +1,4 @@
-# Set up the wireless router
+## Set up the wireless router
 
 The processors in your OctaPi cluster will communicate via a dedicated local Wi-Fi network established by a wireless router. The router does **not** need to be connected to the internet for operation of the cluster, nor does it need to be online for setup.
 

@@ -1,4 +1,4 @@
-# Build an OctaPi
+## Build an OctaPi
 
 In this resource you will make a distributed computer system using:
 

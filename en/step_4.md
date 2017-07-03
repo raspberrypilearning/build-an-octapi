@@ -1,4 +1,4 @@
-# Set up the OctaPi client
+## Set up the OctaPi client
 
 One of the Raspberry Pi computers will be used as the **client machine** giving access to the servers in the OctaPi cluster. You will need the usual peripherals (monitor, keyboard, mouse) connected to this Raspberry Pi in order to use it to control the OctaPi.
 
@@ -35,8 +35,8 @@ One of the Raspberry Pi computers will be used as the **client machine** giving 
     ```bash
     curl https://get.pimoroni.com/unicornhat | bash
     ```
-    
-    You will need to reboot your Pi after installing the Unicorn HAT software. 
+
+    You will need to reboot your Pi after installing the Unicorn HAT software.
 
 - Make sure you are in the `/home/pi` directory, then download the OctaPi client software by typing this command into the terminal:
 

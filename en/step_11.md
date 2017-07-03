@@ -1,4 +1,4 @@
-# Controlling the cluster
+## Controlling the cluster
 
 Now that you have checked your OctaPi is set up and running correctly, you can use the `cluster_action.sh` script to control it.
 
@@ -69,5 +69,3 @@ Example:
 ```bash
 ./cluster_action.sh unicorn /home/pi/Pimoroni/unicornhat/examples/random_sparkles.py
 ```
-
- 
