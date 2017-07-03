@@ -39,3 +39,5 @@
 - Once the server is shut down, remove its micro SD card.
 
 - Using an SD card duplicator or a computer which is able to read SD cards, create seven more identical copies of this SD card and insert them into the other servers so that you have a total of eight.
+
+**NOTE:** It is also possible (but time consuming) to create your eight SD cards by following the server setup instructions eight times. If you choose to use this method instead of duplicating the SD card image, you must run the `ssh-copy-id` command on the client once per server to copy the key across to each server separately. DO NOT REGENERATE THE KEY.
