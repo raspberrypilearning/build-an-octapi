@@ -26,6 +26,17 @@ Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro 
 
     **Dispy** uses psutil for reporting CPU usage of the servers in the cluster.
 
+- Install the `stop_dispy.sh` script to allow you to safely shut down the servers from the client
+
+    ```bash
+    wget https://raw.githubusercontent.com/raspberrypilearning/octapi-setup/server/stop_dispy.sh
+    ```
+    
+    Make this script executable by typing this command:
+    
+    ```bash
+    chmod u+x ./stop_dispy.sh
+    ```
 
 - If you are using the optional Pimoroni **Unicorn HATs**, install the software for them by typing this command into the terminal:
 
