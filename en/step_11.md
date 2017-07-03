@@ -1,22 +1,25 @@
 # Controlling the cluster
 
-The `cluster_action.sh` script runs on the client and uses SSH to administer the servers (that's why we used `ssh-keygen` to authenticate the client with the servers). It relies on the correct IP addresses of the servers being listed in the `ip_list` file. It is a good idea to delete this file when booting the cluster for the first time so that the list is regenerated.
+Now that you have checked your OctaPi is set up and running correctly, you can use the `cluster_action.sh` script to control it.
 
-### Ensure the client can recognise each server SSH key
+The `cluster_action.sh` script runs on the client and uses SSH to administer the servers (that's why we used `ssh-keygen` to authenticate the client with the servers). It relies on the correct IP addresses of the servers being listed in the `ip_list` file. It is a good idea to delete the `ip_list` file when booting the cluster for the **first time** so that the list is regenerated.
 
-From a terminal, type the following command to remove the `ip_list` file:
+- From a terminal, type the following command to remove the `ip_list` file:
 
-```bash
-rm ip_list
-```
+  ```bash
+  rm ip_list
+  ```
 
-The first time you use the cluster, you _may_ need to manually 'ssh' into each server from the client so that the client recognises each server ssh key properly (be sure to replace `<ip address of server>` with the actual server IP address).
+### Setting up the cluster_action script
+- On the client machine, open a terminal
 
-```bash
-ssh <ip address of server>
-```
+- Make sure you are in the `/home/pi` directory by typing in `cd /home/pi`
 
-If at all, this will only be needed once.
+- Set the permissions for the cluster action script so that you can run it by typing this command:
+
+  ```bash
+  chmod u+x ./cluster_action.sh
+  ```
 
 ### Options for the cluster_action script
 
@@ -54,3 +57,17 @@ Example:
 ```bash
 ./cluster_action.sh unicorn /home/pi/unicorn-hat/examples/random_sparkles.py
 ```
+
+  
+
+### Ensure the client can recognise each server SSH key
+
+
+
+The first time you use the cluster, you may need to manually 'ssh' into each server from the client so that the client recognises each server ssh key properly (be sure to replace `<ip address of server>` with the actual server IP address).
+
+```bash
+ssh <ip address of server>
+```
+
+If at all, this will only be needed once.
