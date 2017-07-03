@@ -1,8 +1,8 @@
 ## Check that it works
 
-- Make sure your dedicated "OctaPi" router is powered on and fully booted up, the **client** is booted with peripherals attached, and the **server** is booted with only a power lead attached.
+- Make sure your dedicated 'OctaPi' router is powered on and fully booted up, the **client** is booted with peripherals attached, and the **server** is booted with only a power lead attached.
 
-- Open a terminal on the **client**
+- Open a terminal on the **client**.
 
     ![Terminal](images/terminal.png)
 
@@ -25,14 +25,14 @@
 
     If the `compute.py` script does not work, review your steps one by one and check that client, server, and router are all set up correctly and working properly.
 
-- If the test worked, use the client to manually shut down the server (replacing `<remote_ip>` with the IP address of the **server** you noted down earlier):
+- If the test worked, use the client to manually shut down the server (replacing `<remote_ip>` with the IP address of the server you noted down earlier):
 
     ```bash
     ssh <remote_ip>
     sudo shutdown -HP now
     ```
 
-    You may need to use **nmap** again to find the server IP address if it changed when the Wi-Fi router rebooted.
+    You may need to use `nmap` again to find the server IP address if it changed when the WiFi router rebooted.
 
     In future we will be using the `cluster_action.sh` script to do this.
 
@@ -40,4 +40,4 @@
 
 - Using an SD card duplicator or a computer which is able to read SD cards, create seven more identical copies of this SD card and insert them into the other servers so that you have a total of eight.
 
-**NOTE:** It is also possible (but time consuming) to create your eight SD cards by following the server setup instructions eight times. If you choose to use this method instead of duplicating the SD card image, you must run the `ssh-copy-id` command on the client once per server to copy the key across to each server separately. **DO NOT use the `ssh-keygen` command to regenerate the key.** Refer back to the client setup instructions for how to copy the key from the client to the server.
+**Note:** It is also possible (but time-consuming) to create your eight SD cards by following the server setup instructions eight times. If you choose to use this method instead, you must run the `ssh-copy-id` command on the client once per server to copy the key across to each server separately. **DO NOT** use the `ssh-keygen` command to regenerate the key. Refer back to the client setup instructions for how to copy the key from the client to the server.
