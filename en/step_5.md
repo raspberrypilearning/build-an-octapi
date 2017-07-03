@@ -15,7 +15,7 @@ Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro 
 - As with the client, install the **dispy** software by typing this command into the terminal:
 
     ```
-    sudo pip3 install dispy
+    sudo pip3 install dispy==4.7.1
     ```
 
 - Install the **psutil** software by typing this command into the terminal:
