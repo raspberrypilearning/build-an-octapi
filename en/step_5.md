@@ -28,18 +28,6 @@ Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro 
 
 - Ensure you are in the `/home/pi` directory by typing `cd /home/pi`.
 
-- Install the `stop_dispy.sh` script to allow you to safely shut down the servers from the client
-
-    ```bash
-    wget https://raw.githubusercontent.com/raspberrypilearning/octapi-setup/server/stop_dispy.sh
-    ```
-
-    Make the script executable by typing this command:
-
-    ```bash
-    chmod u+x ./stop_dispy.sh
-    ```
-
 - If you are using the Unicorn HATs, install the software for them by typing this command into the terminal:
 
     ```
