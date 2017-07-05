@@ -3,7 +3,7 @@ hero_image: images/banner.png
 subtitle: Make a distributed computer system
 description: Make a distributed computer system
 original_url: https://codeclubprojects.org/en-GB/scratch/rock-band
-theme: cc-prototype
+theme: red
 published: false
 steps:
   - title: Introduction
