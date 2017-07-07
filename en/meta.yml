@@ -3,7 +3,8 @@ hero_image: images/banner.png
 description: Make a distributed computer system
 theme: red
 duration: 3
-published: true
+listed: true
+ingredient: false
 steps:
   - title: Introduction
   - title: What you will need
