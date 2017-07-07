@@ -1,0 +1,20 @@
+title: Build an OctaPi
+hero_image: images/banner.png
+description: Make a distributed computer system
+original_url: https://codeclubprojects.org/en-GB/scratch/rock-band
+theme: red
+duration: 3
+published: false
+steps:
+  - title: Introduction
+  - title: What you will need
+  - title: Step one - Set up the wireless router
+  - title: Step two - Set up the OctaPi client
+  - title: Step three - Set up one OctaPi server
+  - title: Step four - Set up the server on the OctaPi network
+  - title: Step five - Set up the client on the OctaPi network
+  - title: Step six - Check that it works
+  - title: Step seven - OctaPi physical set-up
+  - title: Step eight - Using the completed OctaPi
+  - title: Step nine - Controlling the cluster
+  - title: Troubleshooting

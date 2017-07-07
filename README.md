@@ -1,2 +1,1 @@
-# rpi-python-build-an-octapi 
-Some readme content
+# Build an OctaPi
