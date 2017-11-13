@@ -14,13 +14,13 @@ Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro 
 
 - As with the client, install `dispy` by typing this command into the terminal:
 
-```
+```bash
 sudo pip3 install dispy==4.7.1
 ```
 
 - Install `psutil` by typing this command into the terminal:
 
-```
+```bash
 sudo pip3 install psutil
 ```
 
@@ -30,7 +30,7 @@ sudo pip3 install psutil
 
 - If you are using the Unicorn HATs, install the software for them by typing this command into the terminal:
 
-```
+```bash
 curl https://get.pimoroni.com/unicornhat | bash
 ```
 
@@ -52,7 +52,7 @@ chmod u+x ./start_unicorn.sh
 
 - Go back to the terminal window and type the following command to begin editing the `/etc/rc.local` file:
 
-```
+```bash
 sudo nano /etc/rc.local
 ```
 
