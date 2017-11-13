@@ -41,7 +41,7 @@ Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro 
     Download the `start_unicorn.sh` bash script for installation on the server using this command:
 
     ```bash
-    wget https://raw.githubusercontent.com/raspberrypilearning/octapi-setup/server/start_unicorn.sh
+    wget https://raw.githubusercontent.com/raspberrypilearning/octapi-setup/master/server/start_unicorn.sh
     ```
 
     Make the script executable by typing this command:
