@@ -75,3 +75,4 @@ _IP=$(hostname -I)
 Then click on the **Interfaces** tab and make sure that SSH is enabled.
 
 ![Enable SSH](images/enable-ssh.png)
+

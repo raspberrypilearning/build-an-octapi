@@ -7,32 +7,32 @@ This file is a bash script and requires execute permission. The error probably o
 
 - Type the following command to make the script executable (there is no need to use `sudo`).
 
-    ```bash
-    chmod u+x cluster_action.sh
-    ```
+ ```bash
+ chmod u+x cluster_action.sh
+ ```
 
 ### The ip_list file only has the router IP and client IP addresses listed - where are the servers?
 If you  are seeing unexpected content, or missing content, this is most likely because the client machine is not logged into the OctaPi network when `cluster_action.sh` is run. This can happen if you did not remove other WiFi networks from `/etc/wpa_supplicant/wpa_supplicant.conf`. The client will log into the best available WiFi network, which may not be the OctaPi network.
 
 - To edit the `wpa_supplicant.conf` file, use nano as follows:
 
-    ```bash
-    sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
-    ```
+ ```bash
+ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+ ```
 
 - The file contents should look like this:
 
-    ```bash
-    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-    update_config=1
-    country=GB
+ ```bash
+ ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+ update_config=1
+ country=GB
 
-    network={
-	    ssid="OctaPi"
-	    psk="itsasecret"
-	    key_mgmt=WPA-PSK
-    }
-    ```
+ network={
+ ssid="OctaPi"
+ psk="itsasecret"
+ key_mgmt=WPA-PSK
+ }
+ ```
 
 Remove any 'network { }' sections for other networks, press `Ctrl` + `o` to save your changes and then `Ctrl` + `x` to exit nano. Reboot the client for the changes to take effect.
 
@@ -44,22 +44,22 @@ This may happen the first time you run the script because the client hasn't seen
 
 - Open a terminal and type in this command to list the IP addresses allocated to your servers:
 
-    ```bash
-    cat ip_list
-    ```
+ ```bash
+ cat ip_list
+ ```
 
 - Type the following command to find the client's IP address.
-    ```bash
-    hostname -I
-    ```
+ ```bash
+ hostname -I
+ ```
 
 - Ignore '192.168.1.1', as this is the 'OctaPi' router, and ignore the client IP address. From the client machine, log in via SSH to the servers one by one using the other IP addresses listed. When you are prompted, say 'yes' to proceed, then type `exit` again.
 
-    ```bash
-    ssh <ip_address>
-    (say 'yes' to continue)
-    exit
-    ```
+ ```bash
+ ssh <ip_address>
+ (say 'yes' to continue)
+ exit
+ ```
 
 `<ip_address>` is one of the server addresses in the `ip_list` file. You will need to type 'yes' in full. Repeat this for all of the servers.
 
@@ -91,3 +91,4 @@ You need to use a dedicated router to avoid conflicting with other devices. Repu
 
 ### I get networking problems with very large clusters (more than one OctaPi module).
 Your WiFi router needs to be able to handle large numbers of simultaneous connections. If it is not, you may start to experience dropped connections to the servers ('no route to host'). In extreme cases, the router may even freeze or reboot unexpectedly. Modern routers for domestic use, even high-performance gaming routers, are not designed for large numbers of simultaneous connections. However, we have observed reliable network performance for two OctaPi modules (17 simultaneous connections) with a router in a £20 price range, and for up to four to five OctaPi modules (max. 41 simultaneous connections) with a gaming router. Beyond that, WiFi networking becomes impractical.
+
