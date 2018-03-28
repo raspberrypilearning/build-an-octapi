@@ -6,9 +6,9 @@ The `cluster_action.sh` script runs on the client and uses SSH to administer the
 
 - From a terminal, type the following command to remove the `ip_list` file:
 
- ```bash
- rm ip_list
- ```
+  ```bash
+  rm ip_list
+  ```
 
 ### Setting up the cluster_action script
 - On the client machine, open a terminal.
@@ -17,9 +17,9 @@ The `cluster_action.sh` script runs on the client and uses SSH to administer the
 
 - Set the permissions for the cluster action script so that you can run it by typing this command:
 
- ```bash
- chmod u+x ./cluster_action.sh
- ```
+  ```bash
+  chmod u+x ./cluster_action.sh
+  ```
 
 ### Ensure the client can recognise each server SSH key
 The first time you use the cluster, you may need to connect to each server via SSH with the client so that it recognises each server's SSH key properly (be sure to replace `<ip address of server>` with the actual server IP address).
@@ -66,4 +66,3 @@ Example:
 ```bash
 ./cluster_action.sh unicorn /home/pi/Pimoroni/unicornhat/examples/random_sparkles.py
 ```
-
