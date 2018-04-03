@@ -2,21 +2,27 @@ title: Build an OctaPi
 hero_image: images/banner.png
 description: Make a distributed computer system
 theme: green
-interests: big-project
+interests: cybersecurity-and-cryptography, big-project
 duration: 3
-curriculum: developer, design-0, programming-3, phys-comp-1, manufacture-0, community-0
+curriculum: 3, design-0, programming-3, phys-comp-1, manufacture-0, community-0
 listed: true
 ingredient: false
-steps:
-  - title: Introduction
-  - title: What you will need
-  - title: Set up the wireless router
-  - title: Set up the OctaPi client
-  - title: Set up one OctaPi server
-  - title: Set up the server on the OctaPi network
-  - title: Set up the client on the OctaPi network
-  - title: Check that it works
-  - title: OctaPi physical set-up
-  - title: Using the completed OctaPi
-  - title: Controlling the cluster
-  - title: Troubleshooting
+technologies: raspberry-pi, python
+hardware: raspberry-pi
+software: python
+site_areas: projects
+version: 4
+last_tested: 2017-01-01
+steps: 
+- title: Introduction
+- title: What you will need
+- title: Set up the wireless router
+- title: Set up the OctaPi client
+- title: Set up one OctaPi server
+- title: Set up the server on the OctaPi network
+- title: Set up the client on the OctaPi network
+- title: Check that it works
+- title: OctaPi physical set-up
+- title: Using the completed OctaPi
+- title: Controlling the cluster
+- title: Troubleshooting
