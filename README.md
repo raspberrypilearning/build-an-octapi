@@ -8,4 +8,4 @@ Find the project online at [projects.raspberrypi.org/en/projects/build-an-octapi
 See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Licence
- See [LICENSE.md](LICENSE.md)
+ See [LICENCE.md](LICENCE.md)
