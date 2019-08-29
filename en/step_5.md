@@ -4,7 +4,7 @@ Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro 
 
 - On a new micro SD card, install the latest version of Raspbian by following the [software guide instructions](https://www.raspberrypi.org/learning/software-guide/quickstart/){:target="_blank"}.
 
-- Boot up a Raspberry Pi 3 using this SD card with a keyboard, screen, and mouse connected.
+- Boot up a Raspberry Pi 3 or 4 using this SD card with a keyboard, screen, and mouse connected.
 
 - Ensure the Raspberry Pi is connected to the internet.
 
@@ -15,7 +15,7 @@ Each of the Raspberry Pi 3 computers in the cluster needs to have its own micro 
 - As with the client, install `dispy` by typing this command into the terminal:
 
 ```bash
-sudo pip3 install dispy==4.7.1
+sudo pip3 install dispy
 ```
 
 - Install `psutil` by typing this command into the terminal:
@@ -50,23 +50,46 @@ Make the script executable by typing this command:
 chmod u+x ./start_unicorn.sh
 ```
 
-- Go back to the terminal window and type the following command to begin editing the `/etc/rc.local` file:
+- Next you need a script to start a dispynode, running at boot on the server. In your terminal type the following:
 
 ```bash
-sudo nano /etc/rc.local
+nano start_dispynode.sh
 ```
 
-- Near the bottom of the file, just before `exit 0`, add the following lines to run `dispy` as a daemon (a process running in the background) each time the server boots:
+- When nano starts you can add the following lines of code:
 
 ```bash
-sleep 20
+#!/bin/sh -e
+sleep 30
 _IP=$(hostname -I)
-/usr/local/bin/dispynode.py -i "$_IP" --daemon --client_shutdown
+dispynode.py -i $_IP --daemon
 ```
 
-**Note:** The sleep for 20 seconds is to allow time for the server to log onto your WiFi router and obtain a network IP address from it. You need the IP address so that the server will listen properly for the client on the network. You may have to adjust this delay to suit the router you are using.
+This script will:
+1. sleep for 30 seconds to allow the server to connevt to the network,get your server's IP address
+2. fetch the server's IP address
+3. start a dispynode daemon that will listen out for instructions from your client.
 
 - Press `Ctrl` + `o` to save your changes, then `Ctrl` + `x` to exit the nano editor.
+
+- Make the script executable.
+
+```bash
+chmod +x start_dispynode.sh
+```
+
+Now you need this script to start when the server boots. To do this you can use `crontab`
+
+- In a terminal type:
+
+```bash
+crontab -e
+```
+
+- Scroll to the bottom of the file and then add the following line.
+```bash
+@reboot sudo /home/pi/start_dispynode.sh
+```
 
 - Check that remote login via SSH is enabled so that remote command line access to your server is possible. In the **Preferences** menu, select **Raspberry Pi Configuration**.
 
@@ -75,3 +98,4 @@ _IP=$(hostname -I)
 Then click on the **Interfaces** tab and make sure that SSH is enabled.
 
 ![Enable SSH](images/enable-ssh.png)
+

@@ -13,17 +13,16 @@
     ```
     The `compute.py` Python script runs 15 jobs on your server. They are all just random delays before returning. If the OctaPi is working correctly, the jobs will complete in about a minute and a table showing the statistics for the application will be shown in the terminal. You should see a result similar to this:
 
-    ```bash
+```bash
+            Node |  CPUs |    Jobs |  Sec/Job | Node Time Sec |    Sent |    Rcvd
+---------------------------------------------------------------------------------
+     raspberrypi |     4 |      16 |     13.2 |         211.5 |   2.8 K |   3.9 K
 
-                               Node |  CPUs |    Jobs |    Sec/Job | Node Time Sec
-    ------------------------------------------------------------------------------
-     192.168.1.3 (raspberrypi)     |     4 |       16 |     12.841 |        205.460
-
-    Total job time: 205.460 sec, wall time: 57.347 sec, speedup: 3.583
-    ```
+Total job time: 211.545 sec, wall time: 59.484 sec, speedup: 3.556
+```
 
 
-    If the `compute.py` script does not work, review your steps one by one and check that client, server, and router are all set up correctly and working properly.
+If the `compute.py` script does not work, review your steps one by one and check that client, server, and router are all set up correctly and working properly.
 
 - If the test worked, use the client to manually shut down the server (replacing `<remote_ip>` with the IP address of the server you noted down earlier):
 
