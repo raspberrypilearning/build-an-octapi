@@ -15,10 +15,10 @@ One of the Raspberry Pi computers will be used as the **client machine** giving 
 - Install `dispy` by typing this command into the terminal:
 
     ```bash
-    sudo pip3 install dispy==4.7.1
+    sudo pip3 install dispy
     ```
 
-    Dispy is a distributed Python implementation that will allow you to write code on the client and run it across the servers. **Note**: It is crucial that you install version 4.7.1 of `dispy`, as later versions rely on a library that is currently incompatible with Raspbian.
+    Dispy is a distributed Python implementation that will allow you to write code on the client and run it across the servers.
 
     Further information is available from [dispy: Distributed and Parallel Computing with/for Python](http://dispy.sourceforge.net/index.html){:target="_blank"}.
 
