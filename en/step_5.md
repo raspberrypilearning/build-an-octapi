@@ -66,7 +66,7 @@ dispynode.py -i $_IP --daemon
 ```
 
 This script will:
-1. sleep for 30 seconds to allow the server to connevt to the network,get your server's IP address
+1. sleep for 30 seconds to allow the server to connect to the network, get your server's IP address
 2. fetch the server's IP address
 3. start a dispynode daemon that will listen out for instructions from your client.
 
