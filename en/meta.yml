@@ -17,9 +17,10 @@ last_tested: 2017-01-01
 steps:
 - title: Introduction
 - title: What you will need
-  completion: engaged
 - title: Set up the wireless router
 - title: Set up the OctaPi client
+  completion:
+  - engaged
 - title: Set up one OctaPi server
 - title: Set up the server on the OctaPi network
 - title: Set up the client on the OctaPi network
@@ -27,5 +28,6 @@ steps:
 - title: OctaPi physical set-up
 - title: Using the completed OctaPi
 - title: Controlling the cluster
-  completion: internal
+  completion:
+  - internal
 - title: Troubleshooting
