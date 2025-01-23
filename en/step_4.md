@@ -45,10 +45,10 @@ One of the Raspberry Pi computers will be used as the **client machine** giving 
     ```
     The client software contains source code examples in Python 3 and a bash control script for rebooting and shutting down the cluster. The control script can be used with the Unicorn HAT as well.
 
-- Move all of the files from the `client` folder you just downloaded into the `/home/pi` folder:
+- Move all of the files from the `client` folder you just downloaded into the `/home/username` folder. Don't forget to use your actual username:
 
     ```bash
-    mv /home/pi/octapi-setup/client/* /home/pi
+    mv /home/pi/octapi-setup/client/* /home/username
     ```
 
 - Shut down your new OctaPi client for the time being and set aside the client SD card in a safe place.

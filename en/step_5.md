@@ -86,9 +86,9 @@ Now you need this script to start when the server boots. To do this you can use 
 crontab -e
 ```
 
-- Scroll to the bottom of the file and then add the following line.
+- Scroll to the bottom of the file and then add the following line. Don't forget to change `username` to the username you are using.
 ```bash
-@reboot sudo /home/pi/start_dispynode.sh
+@reboot sudo /home/username/start_dispynode.sh
 ```
 
 - Check that remote login via SSH is enabled so that remote command line access to your server is possible. In the **Preferences** menu, select **Raspberry Pi Configuration**.

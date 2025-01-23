@@ -31,3 +31,6 @@ steps:
   completion:
   - internal
 - title: Troubleshooting
+  completion:
+  - external
+
